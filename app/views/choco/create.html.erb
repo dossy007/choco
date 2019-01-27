@@ -1,0 +1,33 @@
+<%= @choco.name %>さんへ</br>
+
+<%= @choco.text %></br>
+↓
+↓</br>
+<%= @choco.content %>
+
+</br>
+<%= link_to 'homeに戻る' %>
+
+<!-- <div class="row">
+  <a href="http://twitter.com/share?url=url/choco/<%= @choco.id %>">
+  <button type="button" class="btn btn-primary btn-lg btn-block col-xs-12">Twitterでシェア</button>
+</div>
+<div class="row done_tohome">
+  <a href="/choco/<%= @choco.id %>">
+  <button type="button" class="btn btn-secondary btn-lg btn-block col-xs-12">投稿詳細ページに戻る</button>
+  </a>
+</div>
+ -->
+ <!-- <a href="https://twitter.com/share?
+  url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&
+  via=twitterdev&
+  related=twitterapi%2Ctwitter&
+  hashtags=example%2Cdemo&
+  text=custom%20share%20text">
+<img src="btn_tweet.png">
+</a> -->
+<%= @choco.id %>
+<%= image_tag 'あか時計.jpg' %>
+<!-- <a href="https://twitter.com/share?url=ここにURL&text=<%= @choco.content %>" rel="nofollow" target="_blank">twitterへ共有</a> -->
+
+<a href="https://twitter.com/share?&text=<%= @choco.content %> &image=http://psnews.jp/cat/uploads/2017/02/cat-1646566_1280.jpg" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
