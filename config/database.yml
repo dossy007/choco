@@ -24,6 +24,7 @@ test:
 
 production:
   <<: *default
+  adapter: mysql2
   database: choco_production
   username: choco
   password: <%= ENV['CHOCO_DATABASE_PASSWORD'] %>
