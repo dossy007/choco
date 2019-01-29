@@ -1,13 +1,13 @@
 <%= @choco.name %>さんへ</br>
-
+<%= link_to 'home',root_path %>
+個別ページ
 <%= @choco.text %></br>
 ↓
 ↓</br>
 <%= @choco.content %>
 
 </br>
-<%= link_to 'home',root_path %>
-個別ページ
+
 
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw&text=<%= @choco.content %>" class="twitter-share-button" data-url="localho" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
