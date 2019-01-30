@@ -9,11 +9,10 @@ class ChocoController < ApplicationController
 	def create
 		@choco = Chocolate.create(:text => create_params[:text], :content => create_content,:name => params[:name],:image => "http://psnews.jp/cat/uploads/2017/02/cat-1646566_1280.jpg")
 		@post_id = @choco.id
-		render :show
+		redirect_to choco_path(@choco.id)
 	end
 
 	def show
-		@choco = Chocolate.find[:id]
 	end
 
 	private
