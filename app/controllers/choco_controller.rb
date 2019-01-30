@@ -13,6 +13,7 @@ class ChocoController < ApplicationController
 	end
 
 	def show
+		@choco = Chocolate.find(params[:id])
 	end
 
 	private
