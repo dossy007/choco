@@ -5,7 +5,7 @@
 ここから、shareしてね。</br>
 homeはここから</br>
 <%= link_to 'home',root_path %>
-
+</br>
 <%= @choco.name %>さんへ</br>
 
 <%= @choco.text %></br>
@@ -15,6 +15,6 @@ homeはここから</br>
 
 </br>
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>" data-url="https://chocolates-bomb.herokuapp.com/choco/<%= @choco.id%>">Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com/choco/<%= @choco.id%>">Tweet</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 share
