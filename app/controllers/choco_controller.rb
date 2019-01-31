@@ -7,8 +7,7 @@ class ChocoController < ApplicationController
 	end
 
 	def create
-		@choco = Chocolate.create(:text => create_params[:text], :content => create_content,:name => params[:name],:image => "http://psnews.jp/cat/uploads/2017/02/cat-1646566_1280.jpg")
-		@choco.image = "あか時計.jpg"
+		@choco = Chocolate.create(:text => create_params[:text], :content => create_content,:name => params[:name],:image => "")
 		redirect_to choco_path(@choco.id)
 	end
 
