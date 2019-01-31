@@ -13,6 +13,13 @@ homeはここから</br>
 ↓</br>
 <%= @choco.content %>
 
+<!-- ここに画像の条件分岐を記述。 -->
+<%if @choco.text.length < 5 %>
+<%= image_tag '1.png' %>
+<% else %>
+<%= image_tag '2.jpg' %>
+<% end %>
+
 </br>
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com/choco/<%= @choco.id%>">Tweet</a>
