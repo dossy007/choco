@@ -1,0 +1,273 @@
+/*body{
+	padding: 0;
+	margin: 0;
+	border: none;
+	font-family: helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+}
+h1,h2,h3,p{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	display: inline-block;
+}
+img{
+	width: 100%;
+}
+a img{
+	max-width: 346px;
+}
+section h2{
+	padding-bottom: 10px;
+}
+.cnt-inner{
+	padding: 0 20px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+/*メインビジュアル
+--------------------------*/
+.mainvisual{
+	position: relative;
+}
+.mainvisual::before{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	background: url("../images/mv_arrow.png")no-repeat;
+	background-size: 100%;
+	width: 60px;
+	height: 60px;
+}
+
+/*コンセプト
+--------------------------*/
+.concept{
+	padding: 40px 0;
+	text-align: center;
+}
+.concept h2 img{
+	max-width: 375px;
+}
+.concept p{
+	color: #4D1A21;
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+
+/*プレゼント
+--------------------------*/
+.present{
+	padding: 40px 0;
+	text-align: center;
+	font-size: 14px;
+	background: url("../images/step_bg.jpg")repeat-y;
+	background-size: 100%;
+}
+.present h2 img{
+	max-width: 375px;
+}
+.present h3 img{
+	max-width: 60px;
+}
+.present .step_img{
+	max-width: 224px;
+}
+.present ul{
+	padding: 40px 20px;
+	background: #FFF;
+	border: 2px solid #ffa99f;
+	border-radius: 10px;
+}
+.present li{
+	padding:20px 0 60px;
+	background: url("../images/step_arrow.png")no-repeat bottom center;
+	background-size: 320px;
+}
+.present li:first-child{
+	padding-top: 0;
+}
+.present li:last-child{
+	padding-bottom: 0;
+	background: transparent;
+}
+.present p{
+	color: #4D1A21;
+	line-height: 20px;
+	padding:5px 0 10px;
+}
+.present a{
+	margin-top: 30px;
+}
+/*フッター
+--------------------------*/
+footer{
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	background: url(../images/step_bg.jpg)repeat-y;
+	background-size: 100%;
+}
+small{
+	padding: 20px 0;
+	border-radius: 0px 10px 0 0;
+	background: #4d1a21;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	max-width: 290px;
+	
+}
+footer a{
+	margin-left: 20px;
+	background: #ffb0a3;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+	width: 100%;
+	max-width: 100px;
+	border-radius: 10px 0 0 0;
+	text-decoration: none;
+}
+
+/*メッセージページ
+--------------------------*/
+.massage{
+	position: relative;
+	background: url("../images/step_bg.jpg")repeat-y;
+	background-size: 100%;
+	height: 100vh;
+}
+.massage img{
+	padding-top: 10px;
+	max-width: 100px;
+}
+.massage-txt{
+	font-size: 14px;
+	padding: 20px 0 10px;
+	color: #4D1A21;
+}
+.caution-txt{
+	font-size: 12px;
+	padding: 10px 0 0;
+	color: #4D1A21;
+}
+.massage textarea{
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 2px solid #ffa99f;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: block;
+	height: 40px;
+	padding: 10px 10px;
+	resize: none;
+	overflow: hidden;
+}
+.massage textarea#massage{
+	height: 100px;
+	margin-bottom: 0;
+}
+textarea::placeholder{
+	color: #FFA99F;
+	font-weight: normal;
+}
+.send{
+	padding-top: 30px;
+}
+input{
+	width: 100%;
+}
+.footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	background: url(../images/step_bg.jpg)repeat-y;
+	background-size: 100%;
+}
+.footer a{
+	margin-left: 20px;
+	background: #ffb0a3;
+	text-align: center;
+	color: #fff;
+	padding: 20px 0;
+	width: 100%;
+	max-width: 100px;
+	border-radius: 10px 0 0 0;
+	text-decoration: none;
+}
+
+/*プレゼントページ
+--------------------------*/
+.present-page{
+	position: relative;
+	background: url("../images/step_bg.jpg")repeat-y;
+	background-size: 100%;
+}
+.present-page img{
+	padding: 10px 0;
+	max-width: 100px;
+}
+.present-page-img{
+	text-align: center;
+	background: #FFF;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.present-page-img img{
+	max-width: 300px;
+	padding: 0;
+}
+.present-page-ttl{
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.present-page-txt{
+	font-size: 14px;
+}
+.present-page-box{
+	font-size: 14px;
+	padding: 20px;
+	background: #FFF;
+	border: 2px solid #ffa99f;
+	border-radius: 10px;
+}
+.twitter-btn-box{
+	text-align: center;
+}
+.present-twiiter-btn img{
+	width: 100%;
+	max-width: 300px;
+}
+.present-btn{
+	padding: 20px 0 100px;
+	text-align: center;
+}
+.present-btn img{
+	width: 100%;
+	max-width: 340px;
+}
+
+
+
+
+
+
+*/
