@@ -1,10 +1,88 @@
-<%= form_tag('/choco',method: :post) do %>
-	<h3>
-		投稿する
-	</h3>
-	投稿したいtwiiterのユーザー名を入力してください。(@抜きで)
-
-	<textarea placeholder="名前入力" name="name" cols="10" rows="10"></textarea>
-	<textarea placeholder="text入力" name="text" name= "content" cols="30" rows="10"></textarea>
-	<input type="submit" value="SENT">
-<% end %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>八方美人バレンタイン</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="pagetop">
+	<section class="mainvisual">
+		<h1>
+			<img src="./images/mv.jpg" alt="">
+		</h1>
+	</section>
+	<section class="concept">
+		<div class="cnt-inner">
+			<h2>
+				<img src="./images/h2_giveapresent.png" alt="">
+			</h2>
+			<p>
+				2月14日。バレンタイン。<br>
+				あげたくない人にもチョコをあげなきゃいけない！<br>
+				そんな奥ゆかしい悩みをスマートに解決！<br>
+				送りたくない相手へ普段の気持ちを<br>
+				ドカン！とストレートにぶつけてみよう！<br>
+				あなたの言葉を柔らく甘ーく変換した後に、<br>
+				メッセージとマッチしたチョコが出来上がるよ！<br>
+				それを憎いアイツにプレゼントだ！
+			</p>
+			<a href="./message.html">
+				<img src="./images/btn.png" alt="">
+			</a>
+		</div>
+	</section>
+	<section class="present">
+		<div class="cnt-inner">
+			<h2>
+				<img src="./images/h2_siteconcept.png" alt="">
+			</h2>
+			<ul>
+				<li>
+					<h3>
+						<img src="./images/h3_step01.png" alt="">
+					</h3>
+					<p>
+						送りたくない相手へ<br>
+						メッセージを描こう！
+					</p>
+					<img class="step_img" src="./images/step01_img.png" alt="">
+				</li>
+				<li>
+					<h3>
+						<img src="./images/h3_step02.png" alt="">
+					</h3>
+					<p>
+						メッセージはスウィートな<br>
+						言葉に変換されるので安心！
+					</p>
+					<img class="step_img" src="./images/step02_img.png" alt="">
+					<p class="caution-txt">※変換される言葉によって出来上がりが変わります。<br>
+※変換前の言葉が相手に伝わることはありません。</p>
+				</li>
+				<li>
+					<h3>
+						<img src="./images/h3_step03.png" alt="">
+					</h3>
+					<p>
+						気軽にチョコをあげちゃおう！<br>
+						ツイッターでシェアもできるよ！
+					</p>
+					<img class="step_img" src="./images/step03_img.png" alt="">
+				</li>
+			</ul>
+			<a href="./message.html">
+				<img src="./images/btn.png" alt="">
+			</a>
+		</div>
+	</section>
+	<footer>
+		<small>
+			© sample.
+		</small>
+		<a href="#pagetop">
+			TOPへ
+		</a>
+	</footer>
+</body>
+</html>
