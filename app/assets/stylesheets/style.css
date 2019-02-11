@@ -44,7 +44,7 @@ section h2{
 	right: 0;
 	left: 0;
 	margin: 0 auto;
-	background: url(<%= image_tag 'mv_arrow.png' %>)no-repeat;
+	background: url("<%= image_tag 'mv_arrow.png' %>")no-repeat;
 	background-size: 100%;
 	width: 60px;
 	height: 60px;
@@ -72,7 +72,7 @@ section h2{
 	padding: 40px 0;
 	text-align: center;
 	font-size: 14px;
-	background: url(<%=image_tag 'step_bg.jpg' %>)repeat-y;
+	background: url("<%=image_tag 'step_bg.jpg' %>")repeat-y;
 	background-size: 100%;
 }
 .present h2 img{
@@ -92,7 +92,7 @@ section h2{
 }
 .present li{
 	padding:20px 0 60px;
-	background: url(<%= image_tag 'mv_arrow.png' %>)no-repeat bottom center;
+	background: url("<%= image_tag 'mv_arrow.png' %>")no-repeat bottom center;
 	background-size: 320px;
 }
 .present li:first-child{
@@ -116,7 +116,7 @@ footer{
 	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
-	background: url(<%=image_tag 'step_bg.jpg' %>)repeat-y;
+	background: url("<%=image_tag 'step_bg.jpg' %>")repeat-y;
 	background-size: 100%;
 }
 small{
@@ -144,7 +144,7 @@ footer a{
 /*--------------------------*/
 .massage{
 	position: relative;
-	background: url(<%=image_tag 'step_bg.jpg' %>)repeat-y;
+	background: url("<%=image_tag 'step_bg.jpg' %>")repeat-y;
 	background-size: 100%;
 	height: 100vh;
 }
@@ -196,7 +196,7 @@ input{
 	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
-	background: url(<%=image_tag 'step_bg.jpg' %>)repeat-y;
+	background: url("<%=image_tag 'step_bg.jpg' %>")repeat-y;
 	background-size: 100%;
 }
 .footer a{
@@ -215,7 +215,7 @@ input{
 /*--------------------------*/
 .present-page{
 	position: relative;
-	background: url(<%=image_tag 'step_bg.jpg' %>)repeat-y;
+	background: url("<%=image_tag 'step_bg.jpg' %>")repeat-y;
 	background-size: 100%;
 }
 .present-page img{
