@@ -184,7 +184,8 @@ textarea::placeholder{
 	font-weight: normal;
 }
 .send{
-	padding-top: 30px;
+	padding-top: 15px;
+	width: 15%;
 }
 input{
 	width: 100%;
