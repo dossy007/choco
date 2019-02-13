@@ -27,9 +27,9 @@
 				メッセージとマッチしたチョコが出来上がるよ！<br>
 				それを憎いアイツにプレゼントだ！
 			</p>
-			<a href="./message.html">
+			<%= link_to  new_choco_path do %>
 				<%= image_tag 'btn.png' %>
-			</a>
+			<% end %>
 		</div>
 	</section>
 	<section class="present">
@@ -80,9 +80,7 @@
 		<small>
 			© sample.
 		</small>
-		<a href="#pagetop">
-			TOPへ
-		</a>
+		<%= link_to 'TOPへ',root_path %>
 	</footer>
 </body>
 </html>
