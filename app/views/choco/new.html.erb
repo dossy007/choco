@@ -26,15 +26,16 @@
 			</a>
 			<p class="massage-txt">投稿したいtwiiterのユーザー名を入力してください。<br>(例)「bijinsan」＠は必要ありません</p>
 			<%= form_tag('/choco',method: :post) do %>
-				<textarea placeholder="相手のお名前" name="" id="" cols="30" rows="10"></textarea>
-				<textarea id="massage" placeholder="メッセージ" name="" id="" cols="30" rows="10"></textarea>
-			<% end %>
+				<textarea placeholder="相手のお名前" name="name" id="" cols="30" rows="10"></textarea>
+				<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
 			<p class="caution-txt">※変換される言葉によって出来上がりが変わります。<br>
 ※変換前の言葉が相手に伝わることはありません。</p>
 			<div class="send">
-				<input type="image" src="./images/btn.png" href="./message.html">
+				<input type="image" src="./images/btn.png" href="./message.html" value="SENT">
 				</input>
 			</div>
+			<% end %>
+
 		</div>
 		<div class="footer">
 			<small>
