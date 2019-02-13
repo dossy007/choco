@@ -8,3 +8,40 @@
 	<textarea placeholder="text入力" name="text" name= "content" cols="30" rows="10"></textarea>
 	<input type="submit" value="SENT">
 <% end %>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>八方美人バレンタイン</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="pagetop">
+	<section class="massage">
+		<div class="cnt-inner">
+			<a href="./index.html">
+				<%= image_tag 'header_ttl.png' %>
+				<!-- <img src="./images/header_ttl.png" alt=""> -->
+			</a>
+			<p class="massage-txt">投稿したいtwiiterのユーザー名を入力してください。<br>(例)「bijinsan」＠は必要ありません</p>
+			<textarea placeholder="相手のお名前" name="" id="" cols="30" rows="10"></textarea>
+			<textarea id="massage" placeholder="メッセージ" name="" id="" cols="30" rows="10"></textarea>
+			<p class="caution-txt">※変換される言葉によって出来上がりが変わります。<br>
+※変換前の言葉が相手に伝わることはありません。</p>
+			<div class="send">
+				<input type="image" src="./images/btn.png" href="./message.html">
+				</input>
+			</div>
+		</div>
+		<div class="footer">
+			<small>
+				© sample.
+			</small>
+			<a href="#pagetop">
+				TOPへ
+			</a>
+		</div>
+	</section>
+</body>
+</html>
