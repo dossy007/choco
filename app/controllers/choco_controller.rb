@@ -8,7 +8,11 @@ class ChocoController < ApplicationController
 
 	def create
 		@choco = Chocolate.create(:text => create_params[:text], :content => create_content,:name => params[:name],:image => "")
-		redirect_to choco_path(@choco.id)
+		if @choco.valid?
+			redirect_to choco_path(@choco.id)
+	    else
+	    	redirect_to new_choco_path
+	    end
 	end
 
 	def show
