@@ -1,13 +1,3 @@
-<%= form_tag('/choco',method: :post) do %>
-	<h3>
-		投稿する
-	</h3>
-	投稿したいtwiiterのユーザー名を入力してください。(@抜きで)
-
-	<textarea placeholder="名前入力" name="name" cols="10" rows="10"></textarea>
-	<textarea placeholder="text入力" name="text" name= "content" cols="30" rows="10"></textarea>
-	<input type="submit" value="SENT">
-<% end %>
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -22,20 +12,16 @@
 		<div class="cnt-inner">
 			<a href="./index.html">
 				<%= image_tag 'header_ttl.png' %>
-				<!-- <img src="./images/header_ttl.png" alt=""> -->
 			</a>
-			<p class="massage-txt">投稿したいtwiiterのユーザー名を入力してください。<br>(例)「bijinsan」＠は必要ありません</p>
-			<%= form_tag('/choco',method: :post) do %>
-				<textarea placeholder="相手のお名前" name="name" id="" cols="30" rows="10"></textarea>
-				<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
-			<p class="caution-txt">※変換される言葉によって出来上がりが変わります。<br>
-※変換前の言葉が相手に伝わることはありません。</p>
-			<div class="send">
-				<input type="image" src="./images/btn.png" href="./message.html" value="SENT">
-				</input>
-			</div>
-			<% end %>
-
+				<p class="massage-txt">投稿したいtwiiterのユーザー名を入力してください。<br>(例)「bijinsan」＠は必要ありません</p>
+				<%= form_tag('/choco',method: :post) do %>
+					<textarea placeholder="相手のお名前" name="name" id="" cols="30" rows="10"></textarea>
+					<textarea id="massage" placeholder="メッセージ" name="text" id="" cols="30" rows="10"></textarea>
+				<p class="caution-txt">※変換される言葉によって出来上がりが変わります。<br>
+	※変換前の言葉が相手に伝わることはありません。</p>
+					<input type="submit" src="./images/btn.png" href="./message.html" value="SENT" class="send">
+					</input>
+				<% end %>
 		</div>
 		<div class="footer">
 			<small>
