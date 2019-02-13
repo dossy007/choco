@@ -11,7 +11,9 @@
 	<section class="massage">
 		<div class="cnt-inner">
 			<a href="./index.html">
+				<%= link_to  root_path do %>
 				<%= image_tag 'header_ttl.png' %>
+			<% end %>
 			</a>
 				<p class="massage-txt">投稿したいtwiiterのユーザー名を入力してください。<br>(例)「bijinsan」＠は必要ありません</p>
 				<%= form_tag('/choco',method: :post) do %>
