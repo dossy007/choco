@@ -28,13 +28,14 @@
 						<img src="./images/twitter_btn.png" alt="">
 					</a> -->
 					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com">Tweet</a>
+					<%= link_to "https://twitter.com/share?ref_src=twsrc%5Etfw" %>
 					<img src="/assets/twitter_btn.png" alt="">
 				</div>
 			</div>
 			<div class="present-btn">
 				<%= link_to  root_path do %>
-				<%= image_tag 'home_return.png' %>
-			<% end %>
+					<%= image_tag 'home_return.png' %>
+				<% end %>
 			</div>
 		</div>
 		<div class="footer">
