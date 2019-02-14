@@ -24,17 +24,16 @@
 					<%= @choco.content %>
 				</span>
 				<div class="twitter-btn-box">
-					<a class="present-twiiter-btn" href="./message.html">
+					<!-- <a class="present-twiiter-btn" href="./message.html">
 						<img src="./images/twitter_btn.png" alt="">
-					</a>
+					</a> -->
+					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com">Tweet</a>
+					<img src="/assets/twitter_btn.png" alt="">
 				</div>
 			</div>
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com">Tweet</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 			<div class="present-btn">
 				<a href="./index.html">
-					<img src="./images/home_return.png" alt="">
+					<img src="/assets/home_return.png" alt="">
 				</a>
 			</div>
 		</div>
@@ -45,6 +44,7 @@
 			<%= link_to 'TOPへ',root_path %>
 			</a>
 		</div>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	</section>
 </body>
 </html>
