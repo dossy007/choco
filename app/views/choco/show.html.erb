@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>八方美人バレンタイン</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://chocolates-bomb.herokuapp.com/" />
+    <meta property="og:title" content="八方美人" />
+    <meta property="og:image" content="https://chocolates-bomb.herokuapp.com/assets/mv-762ee35aa4560a6a82127f0ec5943474401753ab88fff0dfb9706324405134ab.jpg">
 </head>
 <body id="pagetop">
 	<section class="present-page">
@@ -27,8 +31,9 @@
 					<!-- <a class="present-twiiter-btn" href="./message.html">
 						<img src="./images/twitter_btn.png" alt="">
 					</a> -->
-					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com">Tweet</a>
-					<%= link_to "https://twitter.com/share?ref_src=twsrc%5Etfw" %>
+					<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="<%= @choco.content %>@<%= @choco.name %>さんへ " data-url="https://chocolates-bomb.herokuapp.com" src="/assets/twitter_btn.png">Tweet</a>
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</section>
 					<img src="/assets/twitter_btn.png" alt="">
 				</div>
 			</div>
@@ -45,7 +50,5 @@
 			<%= link_to 'TOPへ',root_path %>
 			</a>
 		</div>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	</section>
 </body>
 </html>
